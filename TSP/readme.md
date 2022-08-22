@@ -1,1 +1,2 @@
-This python file is a script that solves the Euclidean Travelling Salesman problem using a method based on the family of genetic algorithms.
+This python file is a script that solves the Euclidean Travelling Salesman problem using a method based on the family of genetic algorithms. 
+The code is checked against the mlrose library.
