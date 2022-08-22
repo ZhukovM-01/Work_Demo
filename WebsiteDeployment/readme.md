@@ -1,1 +1,3 @@
-Project based on K8/Docker deployment of simple website API.
+Python Kubernetes Docker Project
+
+### Read DockerKubernetesChat.txt for guidelines

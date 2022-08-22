@@ -1,0 +1,41 @@
+### 1. Compile docker image and tag for gcr(google cloud registry)
+### 2. Push image locally to docker registry
+### 3. Authenticate gcloud connection
+### 4. Kubernetes deploy app on gcloud
+### 5. Initialize db inside gcloud deployment
+
+##### instead of <> insert your id
+
+docker build -t <image-id> .
+
+docker tag flask-chat1 gcr.io/<project-id>/<image-id>
+
+
+
+
+
+docker push gcr.io/<project-id>/<image-id>
+
+
+
+
+
+gcloud container clusters get-credentials <image-id> --zone europe-central2-b --project <project-id>
+
+
+
+
+kubectl apply -f deployment.yaml
+
+
+
+
+
+kubectl exec -it <service-pod id> bash
+
+
+flask db init 
+
+flask db migrate
+
+Flask db upgrade

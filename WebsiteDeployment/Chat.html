@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{{ url_for('static',filename='Chat.css') }}">
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+<p>Chat</p>
+<div>
+    <table>
+    {% for message in query %}
+    <tr>
+        <td>
+            {{message.id}}
+        </td>
+        <td>
+            {{message.message}}
+        </td>
+        <td>
+            {{message.user}}
+        </td>
+        <td>
+            {{message.time}}
+        </td>
+    </tr>
+    {% endfor %}
+    </table>
+</div>
+
+<div>
+    <form action="/" name="Send" method="POST">
+        <label>Message:</label>
+        <input type="text" id="message" name="message">
+        <label>Username:</label>
+        <input type="text" id="user" name="user">
+        <input type="submit" value="submit">
+    </form>
+</div>
+
+</body>
+</html>
