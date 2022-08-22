@@ -1,0 +1,28 @@
+Some of the algorithms studied:
+
+1. Sorting
+  a. bubble sort
+  b. selection sort
+  c. insertion sort
+  d. heap sort
+  e. merge sort
+  f. quick sort
+
+2. Graph Search
+  a. Breadth-First Search
+  b. Depth-First Search
+  c. Dijkstra's Algorithm
+  d. A* Algorithm
+
+4. Graph Traversal
+  a. Boruvka's Algorithm
+  b. Prim's Algorithm
+  c. Kruskal's Algorithm
+
+3. Other
+  a. RSA Algorithm (cybersecurity)
+  b. Constraint Programming (language: Minizinc)
+  c. Hoare Median Finding
+  d. Median of Medians
+  e. Genetic Algorithm
+  
